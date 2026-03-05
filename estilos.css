@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background: url(imagenes/fondoestrellas.jpg) no-repeat center center fixed;
   background-size: cover;
   color: white;
@@ -370,7 +370,6 @@ section form select {
   box-sizing: border-box;
 }
 
-
 @media (max-width: 1024px) {
 
   header {
@@ -411,8 +410,6 @@ section form select {
   }
 
 }
-
-
 
 @media (max-width: 480px) {
 
@@ -501,4 +498,23 @@ section form select {
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
+}
+.toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #5e60a0;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.toast.mostrar {
+  opacity: 1;
+  transform: translateY(0);
 }
